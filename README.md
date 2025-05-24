@@ -14,15 +14,15 @@ A modern AI-powered chat application that enables seamless and intelligent conve
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js, Tailwind CSS
+- **Frontend:** React.js, Tailwind CSS,Tailwind CSS
 - **Deployment:** Vercel
 
 ## 📦 Getting Started
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
+3. Start the development server: `npm run dev`
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the Beyond Chats.

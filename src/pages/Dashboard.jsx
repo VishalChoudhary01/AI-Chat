@@ -38,7 +38,7 @@ const Dashboard = () => {
 
   {/* heading right */}
     <div className='flex justify-between  items-center font-Poppins w-[24%] px-5  '>
-      <div className='flex gap-x-8 text-heading3 font-Poppins font-medium    '>
+      <div className='flex gap-x-8 text-heading3 font-Poppins font-medium px-3    '>
         <p
         onClick={() => handleTabClick("AI Copilot")}
         className={`flex items-center gap-x-1 relative cursor-pointer ${

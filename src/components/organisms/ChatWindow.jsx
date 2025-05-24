@@ -4,6 +4,9 @@ import ChatHead from '../molecules/ChatHead';
 import girl from '../../assets/images/girl.png'
 import { FaAngleDown } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
+import { FaBookmark } from "react-icons/fa";
+import { AiFillThunderbolt } from "react-icons/ai";
+import { FaSmile } from "react-icons/fa";
 const ChatWindow = () => {
   const [messages, setMessages] = useState([
     { id: 1, text: "I was hoping you'd be able to refund me...", isSent: false, timestamp: '4dm' },
@@ -24,7 +27,7 @@ const ChatWindow = () => {
   };
 
   return (
-    <div className="w-[60%] flex flex-col items-center min-h-screen px-2 py-4 ">
+    <div className="w-[60%] flex flex-col items-center min-h-screen justify-between px-2 py-2 ">
       <div className="w-full max-w-7xl space-y-4">
         {messages.map((message) => (
           <div
@@ -74,18 +77,37 @@ const ChatWindow = () => {
 
 
       {/* message type */}
-        <div className='w-full relative top-28 px-3'>
-          <div className='flex gap-x-1 absolute bottom-14 left-6 items-center'>
+          <div className='w-full'>
+            <div className='w-full relative   px-3 rounded-lg border border-gray-300 shadow shadow-ChatBg'>
+          <div className='flex gap-x-1 absolute bottom-32 left-6 items-center'>
           <MdMessage/>
           <span>Chat</span>
           <FaAngleDown/>
         </div>
-      <textarea className=' w-full pt-8 px-2 focus:outline-none rounded-lg border border-gray-300 shadow shadow-ChatBg' placeholder='Use XX for shortcuts'>
-       
+      <textarea className=' resize-none w-full h-40  px-2 pt-10 focus:outline-none ' placeholder='Use XX for shortcuts'>
 
       </textarea>
+      <div className='absolute flex bottom-2 left-4 gap-x-2 text-gray-600'>
+        
+          <AiFillThunderbolt/>
+        <span className='bg-gray-400 h-4 w-[0.1em]'>
+        </span>
+          <FaBookmark/>
+          <FaSmile/>
+
+      </div>
+
+      <div className='absolute right-0 bottom-2 flex items-center gap-x-2 text-gray-600'>
+        <button className='font-medium'>Send</button>
+        <span className='bg-gray-400 h-4 w-[0.1em]'></span>
+        <FaAngleDown/>
+
+
+      </div>
       
         </div>
+          </div>
+        
      
        
     </div>
