@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+
+@theme{
+  --color-gray-1: #9899A7;           /* RGB(152, 153, 167)       */
+    --color-gray-2: #4F4F50;           /* RGB(79, 79, 80)          */
+    --color-buttonText: #F5F6F9;        /* RGB(245, 246, 249)       */
+    --color-IconBg2: #C2C3D3;           /* RGB(194, 195, 211)       */
+    --color-primary-red: #CB4D63;       /* RGB(203, 77, 99)         */
+    --color-heading2: #B9B7B1;            /* RGB(185, 183, 177)       */
+    --color-buttonBG: #151516;            /* RGB(21, 21, 22)          */
+    --color-light-blue: #D6DBEE;       /* RGB(214, 219, 238)       */
+    --color-TextColor: #737C8F;       /* RGB(115, 124, 143)       */
+    --color-gold: #A69C64;             /* RGB(166, 156, 100)       */
+    --color-lavender: #BAA4C0;         /* RGB(186, 164, 192)       */
+    --color-readTextColor: #DBD6D3;        /* RGB(219, 214, 211)       */
+    --color-heading3: #6F7180;           /* RGB(111, 113, 128)       */
+    --color-pale-lilac: #DACBE1;       /* RGB(218, 203, 225)       */
+    --color-primary-blue: #555EC2;     /* RGB(85, 94, 194)         */
+    --color-pale-pink: #EDDBE4;        /* RGB(237, 219, 228)       */
+    --color-Lightesgray: #EAE4E3;      /* RGB(234, 228, 227)       */
+    --color-ChatBg: #E4E9F9;         /* RGB(228, 233, 249)       */
+    --color-pale-lavender: #EFE4ED;    /* RGB(239, 228, 237)       */
+    --color-periwinkle: #ACBCFC;       /* RGB(172, 188, 252)       */
+    --color-iconBg: #ADB3C0;       /* RGBA(173, 179, 192)      */
+
+  /* fonts */
+  --font-Roboto:"Roboto", sans-serif;
+  --font-Roboto-Flex: "Roboto Flex", sans-serif;
+  --font-Roboto-Mono:  "Roboto Mono", monospace;
+  --font-Roboto-Slab: "Roboto Slab", serif;
+  --font-Poppins:"Poppins", sans-serif;
+}
