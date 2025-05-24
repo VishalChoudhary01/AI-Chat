@@ -31,4 +31,34 @@
   --font-Roboto-Mono:  "Roboto Mono", monospace;
   --font-Roboto-Slab: "Roboto Slab", serif;
   --font-Poppins:"Poppins", sans-serif;
+
+  
+  
+  
+}
+
+
+
+.gradientbg {
+  background: linear-gradient(180deg, rgba(228, 243, 244, 0.315) 0%,      
+    rgba(212, 239, 243, 0.244) 40%,     
+    #c5c6f157 90%,                       
+    #7e67f1 70%,                              
+    #e256e2 70%,                              
+    #e25d63 55%,                              
+    #e554a1 100%                 );
+  background-size: 300% 300%; 
+  animation: gradientShift 12s ease infinite; 
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%; 
+  }
+  50% {
+    background-position: 100% 50%; 
+  }
+  100% {
+    background-position: 0% 50%; 
+  }
 }

@@ -9,10 +9,10 @@ const LeftSideBar = () => {
     <div className='w-[20%]  mr-2   shadow shadow-ChatBg '>
           <div className='w-full px-2.5 pt-2'>
             <div className='flex  w-full justify-center md:text-[0.95rem]'>
-              <p className='w-full flex items-center font-bold gap-x-1 font-Poppins'> <span>5 Open</span>
+              <p className='w-full flex items-center font-bold gap-x-1 font-Poppins'> <span className='md:text-[0.8rem] text-[0.7rem]'>5 Open</span>
                 <FaChevronDown className='text-black'/>
               </p>
-              <p className='w-full flex items-center font-bold gap-x-1 font-Poppins'> <span>Waiting longest</span>
+              <p className='w-full flex items-center font-bold gap-x-1 font-Poppins'> <span className='md:text-[0.8rem] text-[0.7rem]'>Waiting longest</span>
                 <FaChevronDown className='text-black'/>
               </p>
             </div>
@@ -28,7 +28,7 @@ const LeftSideBar = () => {
     
     
           </div>
-          
+
         </div>
   )
 }

@@ -9,8 +9,8 @@ import { AiFillThunderbolt } from "react-icons/ai";
 import { FaSmile } from "react-icons/fa";
 const ChatWindow = () => {
   const [messages, setMessages] = useState([
-    { id: 1, text: "I was hoping you'd be able to refund me...", isSent: false, timestamp: '4dm' },
-    { id: 2, text: "Let me look into this for you...", isSent: true, timestamp: 'Just now' },
+    { id: 1, text: "I was hoping you'd be able to refund me...", isSent: false, timestamp: '4m' },
+    { id: 2, text: "Let me look into this for you...", isSent: true, timestamp: 'seen' },
   ]);
   const [newMessage, setNewMessage] = useState('');
 
@@ -27,8 +27,8 @@ const ChatWindow = () => {
   };
 
   return (
-    <div className="w-[60%] flex flex-col items-center min-h-screen justify-between px-2 py-2 ">
-      <div className="w-full max-w-7xl space-y-4">
+    <div className="w-[60%] flex flex-col items-center min-h-screen justify-between px-2 pt-2 ">
+      <div className="w-full max-w-7xl space-y-2">
         {messages.map((message) => (
           <div
             key={message.id}
@@ -55,7 +55,7 @@ const ChatWindow = () => {
             >
               <p>{message.text}</p>
               <p className={`text-xs mt-1 ${message.isSent ? 'text-blue-100' : 'text-gray-500'}`}>
-                {message.timestamp}
+                { message.timestamp}
               </p>
             </motion.div>
 
@@ -98,11 +98,9 @@ const ChatWindow = () => {
       </div>
 
       <div className='absolute right-0 bottom-2 flex items-center gap-x-2 text-gray-600'>
-        <button className='font-medium'>Send</button>
+        <button onClick={handleSend} className='font-medium'>Send</button>
         <span className='bg-gray-400 h-4 w-[0.1em]'></span>
         <FaAngleDown/>
-
-
       </div>
       
         </div>
